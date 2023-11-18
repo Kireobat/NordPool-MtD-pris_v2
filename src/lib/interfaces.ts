@@ -31,8 +31,12 @@ export interface DataToSaveInterface {
     },
 }
 
-export interface Endpoint {
+export interface EndpointInteface {
     method: string;
     path: string;
     description: string;
+}
+
+export interface RegionInterface {
+    name: string;
 }

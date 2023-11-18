@@ -12,6 +12,7 @@
 
     onMount(() => {
             root = document.documentElement;
+            root.classList.add('dark');
             on = false;
     });
 
@@ -28,6 +29,6 @@
 </script>
 
 <Toggle name="toggle" bind:on>
-    <Toggle.LeftIcon slot="left-icon" data={sun} class="text-text-col dark" />
-    <Toggle.RightIcon slot="right-icon" data={moon} class="text-text-col dark"/>
+    <Toggle.LeftIcon slot="left-icon" data={moon} class="text-text-col dark" />
+    <Toggle.RightIcon slot="right-icon" data={sun} class="text-text-col dark"/>
 </Toggle>
