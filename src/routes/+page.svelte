@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+    import RegionSelector from "$lib/components/regionSelector/regionSelector.svelte";
+import Topbar from "$lib/components/topbar/Topbar.svelte";
+    
+</script>
+<main class="h-full bg-background-col text-text-col">
+    <Topbar />
+    <RegionSelector />
+</main>

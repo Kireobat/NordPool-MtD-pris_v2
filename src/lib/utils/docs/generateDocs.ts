@@ -9,11 +9,6 @@ export function getV1Endpoints(): Endpoint[] {
     const endpoints: Endpoint[] = [
         {
             method: 'GET',
-            path: '/api/v1/spotpris',
-            description: 'Does nothing.'
-        },
-        {
-            method: 'GET',
             path: '/api/v1/spotpris/all',
             description: 'Returns all data availiable.'
         },
