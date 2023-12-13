@@ -2,13 +2,13 @@ import pricesJSON from '$lib/data/prices.json';
 import { addInfo } from '$lib/utils/api/addInfo';
 import type { PricesInterface } from '$lib/interfaces';
 
-export function GET() {
+export async function GET() {
 
     const timerStart = Date.now();
 
     const currentMonth = new Date().getMonth();
 
-    const filteredPrices = pricesJSON.filter(price => new Date(price.info.date).getMonth() === currentMonth);
+    const filteredPrices = pricesJSON.filter(price => new Date(price.info.date).getMonth() === currentMonth -1);
 
     const averagePrices: PricesInterface = {
         oslo: {

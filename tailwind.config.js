@@ -11,6 +11,7 @@ export default {
       'primary-col': 'var(--primary-col)',
       'secondary-col': 'var(--secondary-col)',
       'accent-col': 'var(--accent-col)',
+      'shadow-col': 'var(--shadow-col)',
     },
     fontSize: {
       sm: '0.750rem',

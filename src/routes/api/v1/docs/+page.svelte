@@ -1,16 +1,11 @@
 <script lang="ts">
     import { getV1Endpoints } from '$lib/utils/docs/generateDocs';
     import ApiInfo from '$lib/components/api/ApiInfo.svelte';
+    import type { EndpointColor } from '$lib/interfaces';
 
     const endpoints = getV1Endpoints();
 
-    interface EndpointColor {
-        GET: string;
-        POST: string;
-        PUT: string;
-        DELETE: string;
-        [key: string]: string;
-    }
+    
 
     const endpointColor: EndpointColor = {
         GET: 'bg-green-400',

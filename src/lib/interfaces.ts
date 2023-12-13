@@ -3,6 +3,7 @@ import type { AddInfoReturnType } from './utils/api/addInfo';
 interface PriceInterface {
     selector?: string,
     price: number,
+    change?: number,
 }
 
 export interface PricesInterface {
@@ -31,7 +32,7 @@ export interface DataToSaveInterface {
     },
 }
 
-export interface EndpointInteface {
+export interface EndpointInterface {
     method: string;
     path: string;
     description: string;
@@ -39,4 +40,15 @@ export interface EndpointInteface {
 
 export interface RegionInterface {
     name: string;
+    price: number;
+    change?: number;
+    prefix?: "+" | "-";
+}
+
+export interface EndpointColor {
+    GET: string;
+    POST: string;
+    PUT: string;
+    DELETE: string;
+    [key: string]: string;
 }

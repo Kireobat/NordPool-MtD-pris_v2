@@ -1,9 +1,9 @@
 <script lang="ts">
-    import type { Endpoint } from '$lib/interfaces';
+    import type { EndpointInterface, EndpointColor } from '$lib/interfaces';
 
-    export let endpoint: Endpoint;
+    export let endpoint: EndpointInterface;
 
-    export let endpointColor;
+    export let endpointColor: EndpointColor;
 </script>
 
 <div class="bg-slate-200 rounded-2xl mx-4 my-4 p-2">

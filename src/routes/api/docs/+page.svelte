@@ -3,5 +3,5 @@
 <h2>currently availiable apis:</h2>
 
 <ul>
-  <li><a href="/api/v1">v1</a></li>
+  <li><a href="/api/v1/docs">v1</a></li>
 </ul>

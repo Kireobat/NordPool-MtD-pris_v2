@@ -5,15 +5,13 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    //transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  }
     :root {
       --text-col: #040a10;
       --background-col: #e6f0f9;
       --primary-col: #26b4e3;
       --secondary-col: #c1daf0;
       --accent-col: #2d75b9;
+      --shadow-col: #00000040;
     }
     .dark {
       --text-col: #eff5fb;
@@ -21,6 +19,7 @@
       --primary-col: #1caad9;
       --secondary-col: #0f283e;
       --accent-col: #468fd2;
+      --shadow-col: #26B4E340;
     }
 }
   
