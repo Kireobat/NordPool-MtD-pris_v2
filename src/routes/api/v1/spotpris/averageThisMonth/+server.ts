@@ -5,7 +5,7 @@ import fetch from 'node-fetch';
 
 const enviroment = "true"
 
-const URL = enviroment ? "http://127.0.0.1:5173/api/v1/spotpris/averageLastMonth" : "https://spotpris.eu/api/v1/spotpris/averageLastMonth";
+const URL = enviroment ? "http://localhost:5173/api/v1/spotpris/averageLastMonth" : "https://spotpris.eu/api/v1/spotpris/averageLastMonth";
 
 export async function GET() {
 
